@@ -2,9 +2,6 @@
 CREDITS
 https://github.com/AdamBalski/adventofcode/blob/main/utils.py
 """
-
-
-
 import re
 import itertools
 
@@ -12,7 +9,11 @@ DEFAULT_PARSING_FUNCTIONS = {
         "int": int,
         "float": float,
         "str": str,
-        "split": lambda line: line.split()
+        "split": lambda line: line.split(),
+        "csplit": lambda line: line.split(","),
+        "list": list,
+        "add": sum,
+        "range": lambda el: list(range(el))
 }
 
 def get_extract_regex(extract_pattern):
