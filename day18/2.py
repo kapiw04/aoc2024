@@ -34,7 +34,17 @@ def find_path(bytes):
 
     return dist[ROWS - 1][COLS - 1] != float("inf")
 
-for i in range(1024, 10000):
-    if not find_path(i):
-        print(i)
-        break
+min_bytes = 1024
+max_bytes = 3450
+
+def binary_search(start, end):
+    if start == end:
+        return start
+
+    mid = (start + end) // 2
+    if not find_path(mid):
+        return binary_search(start, mid)
+    else:
+        return binary_search(mid + 1, end)
+
+print(binary_search(min_bytes, max_bytes))

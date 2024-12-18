@@ -31,7 +31,7 @@ def find_path():
                     dist[ny][nx] = d + 1
                     prev[ny][nx] = (x, y)
                     heapq.heappush(pq, (d + 1, nx, ny, moves + 1))
-
+                    
     print(dist[ROWS - 1][COLS - 1])
 
 find_path()
