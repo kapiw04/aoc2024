@@ -3,3 +3,5 @@
 **/a.out
 **/.gdb_history
 **/__pycache__/*
+**/*-failed.py
+.vscode
