@@ -5,3 +5,4 @@
 **/__pycache__/*
 **/*-failed.py
 .vscode
+.command_history
