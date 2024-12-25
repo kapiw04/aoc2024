@@ -1,2 +1,0 @@
-# long story short it took like ~40 seconds to run this code so after submitting the answer I decided to optimize it
-# I was unable to do so and now I can't revert to the original code. Maybe I'll try to attempt it again later
